@@ -1,0 +1,9 @@
+n = int(input())
+previous = input().strip()
+count = 1
+for _ in range(n - 1):
+    current = input().strip()
+    if current != previous:
+        count += 1
+    previous = current
+print(count)
