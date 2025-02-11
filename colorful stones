@@ -1,0 +1,11 @@
+def final_position(x, y):
+    s = 0
+    m = 1
+    for i in y:
+        if s < len(x) and i == x[s]:
+            m += 1
+            s += 1
+    return m
+x = input().strip()
+y = input().strip()
+print(final_position(x, y))
